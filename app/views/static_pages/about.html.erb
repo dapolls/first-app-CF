@@ -1,5 +1,4 @@
 <h1 class="welcome">About your Online Store</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
 <div id="carousel-about" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -11,7 +10,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag("spruce.jpg") %>
+      <%= image_tag("spruce.jpg", class: "img-responsive spruce") %>
       <div class="carousel-caption">
         <div class="carousel-caption">
           <h3>Here is an example headline</h3>
@@ -20,7 +19,7 @@
       </div>
     </div>
     <div class="item">
-      <%= image_tag("mushy.jpg") %>
+      <%= image_tag("mushy.jpg", class: "img-responsive mushy") %>
       <div class="carousel-caption">
         <div class="carousel-caption">
           <h3>Here is an example headline</h3>

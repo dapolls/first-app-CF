@@ -1,4 +1,42 @@
 <h1 class="welcome">Welcome to your Online Store</h1>
 <p>Find me in app/views/static_pages/index.html.erb</p>
-<%= image_tag("spruce.jpg") %>
-<%= image_tag("mushy.jpg") %>
+<div id="carousel-about" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag("spruce.jpg") %>
+      <div class="carousel-caption">
+        <div class="carousel-caption">
+          <h3>Here is an example headline</h3>
+          <p>Here is an example description</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("mushy.jpg") %>
+      <div class="carousel-caption">
+        <div class="carousel-caption">
+          <h3>Here is an example headline</h3>
+          <p>Here is an example description</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
